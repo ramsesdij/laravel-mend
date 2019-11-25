@@ -10,7 +10,7 @@
 #/
 
 mv laravel-mend-master/.mend /etc/.mend
-echo "alias mend='sh /etc/.mend/mend'" >> /etc/bash.bashrc
+echo "alias mend='sh /etc/.mend/mend'" >> /etc/skel/.bashrc
 
 PASS=$(openssl rand -base64 32)
 useradd -G sudo -d /home/mend -p $PASS -m mend

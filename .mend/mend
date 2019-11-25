@@ -1,0 +1,19 @@
+#!/bin/bash
+
+#/
+#--------------------------------------------------------------------------
+# Laravel MEND
+#--------------------------------------------------------------------------
+#
+# This file will pass the argument to the necessary script.
+#
+#/
+
+if [ "$1" = "-h" ]
+then
+    echo "Hallo -h"
+elif [ "$1" = "host" ] ; then
+    echo "Hallo host"
+else
+    echo "Hallo null"
+fi
